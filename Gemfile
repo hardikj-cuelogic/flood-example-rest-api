@@ -5,6 +5,7 @@ gem 'rails', '3.2.13'
 gem 'pg'
 gem 'jquery-rails'
 gem 'twitter-bootstrap-rails'
+gem 'sextant'
 gem 'rails_12factor', group: :production
 
 group :assets do
