@@ -3,7 +3,7 @@ class CreateProducts < ActiveRecord::Migration
     create_table :products do |t|
       t.string :name
       t.belongs_to :category
-      t.decimal :price, :precision => 2, :scale => 8
+      t.decimal :price
       t.date :released_on
 
       t.timestamps

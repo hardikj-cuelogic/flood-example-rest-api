@@ -22,10 +22,10 @@ ActiveRecord::Schema.define(:version => 20120515210216) do
   create_table "products", :force => true do |t|
     t.string   "name"
     t.integer  "category_id"
-    t.decimal  "price",       :precision => 2, :scale => 8
+    t.decimal  "price"
     t.date     "released_on"
-    t.datetime "created_at",                                :null => false
-    t.datetime "updated_at",                                :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   add_index "products", ["category_id"], :name => "index_products_on_category_id"
