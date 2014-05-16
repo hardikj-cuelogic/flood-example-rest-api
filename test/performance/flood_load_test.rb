@@ -9,8 +9,10 @@ test do
   # make all requests with an Accept: application/json header
   with_json
 
-  # start 1 user and loop 5 times
-  threads 1000, loops: 1 do
+  # start 1,000 users and loop 5 times
+  threads 1000, loops: 5 do
+
+    think_time 1000, 3000
 
     # make a HTTP GET request to the product index
     get name: 'list_products', url: "#{base_url}/products"
