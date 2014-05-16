@@ -13,4 +13,5 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-jmeter.jmx jmeter.jtl jmeter.log
+jmeter.*
+
